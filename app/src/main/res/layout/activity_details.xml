@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akshay.quickdeal.Activities.details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3f51b5"
+        android:id="@+id/detail_linear"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:paddingLeft="15dp"
+            android:paddingBottom="5dp"
+            android:textColor="#e2ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/previous_desc"
+            android:textColor="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingBottom="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deatilTitle"
+        android:layout_below="@id/detail_linear"
+        android:text="Description"
+        android:textColor="#2a5bfc"
+        android:padding="16dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attached_file_text"
+        android:text="Attached File"
+        android:layout_below="@id/deatilTitle"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#2a5bfc"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/attached_file_text"
+        >
+
+        <Button android:text="Start Download"
+            android:id="@+id/down_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"></Button>
+
+        <ImageView android:layout_height="wrap_content"
+            android:id="@+id/imageView1"
+            android:src="@drawable/icon"
+            android:layout_width="wrap_content"></ImageView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#fff200"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/mybutton"
+        android:text="Not Interseted" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/button1"
+        android:textColor="#fff200"
+        android:background="@drawable/mybutton"
+        android:text="Message Now" />
+
+</RelativeLayout>
